@@ -17,9 +17,9 @@ if chislo_komp == chislo_kor
 else
   if res <= 2
     puts 'Тепло'
-else
-  res >= 3
-  puts 'Холодно'
+  else
+    res >= 3
+    puts 'Холодно'
   end
   if chislo_kor > chislo_komp
     puts 'потрібно меньше'
@@ -63,9 +63,9 @@ if chislo_komp == chislo_kor
 else
   if res <= 2
     puts 'Тепло'
-else
-  res >= 3
-  puts 'Холодно'
+  else
+    res >= 3
+    puts 'Холодно'
   end
   if chislo_kor > chislo_komp
     puts 'потрібно меньше'
