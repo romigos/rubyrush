@@ -2,7 +2,7 @@ puts 'Гра для програмістів «Вгадайка»'
 
 # Компьютер загадує число
 chislo_komp = rand(16)
-
+puts chislo_komp
 # Користувач робе спробу вгадати число
 puts ' Компьютер загадав число від  0 до 16, відгадай яке?'
 puts ' У Вас 3 спроби:'
@@ -17,9 +17,9 @@ if chislo_komp == chislo_kor
 else
   if res <= 2
     puts 'Тепло'
-else
-  res >= 3
-  puts 'Холодно'
+  else
+    a = 'я не хочу думати'
+    puts 'Холодно'
   end
   if chislo_kor > chislo_komp
     puts 'потрібно меньше'
@@ -41,7 +41,7 @@ else
   if res <= 2
     puts 'Тепло'
   else
-    res >= 3
+    a = 'я не хочу думати'
     puts 'Холодно'
   end
   if chislo_kor > chislo_komp
@@ -63,9 +63,9 @@ if chislo_komp == chislo_kor
 else
   if res <= 2
     puts 'Тепло'
-else
-  res >= 3
-  puts 'Холодно'
+  else
+    a = 'я не хочу думати'
+    puts 'Холодно'
   end
   if chislo_kor > chislo_komp
     puts 'потрібно меньше'
