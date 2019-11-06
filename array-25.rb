@@ -10,11 +10,10 @@ puts 'У нас усього ' + cars.count.to_s + ' машин. Вам яку?'
 
 # Запитуємо у покупця яку машину хоче
 my_car = gets.chomp.to_i
-puts my_car
 number = cars.count
-puts number
-# Виводимо інформацію для покупця
-if my_car < 0 && my_car > number
+
+# Перевіряємо введену користуваче інформацію і Виводимо
+if my_car < 0 || my_car > number
   puts 'Виберіть інше число'
 else
   puts 'Поздоровляємо, ви отримуєте:'
