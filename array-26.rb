@@ -27,7 +27,7 @@ if player_num == 0 &&
 end
 if player_num == 0 &&
     comp_num == 2
-  wins.push 'Виграв, ккомпьютер'
+  wins.push 'Виграв, компьютер'
 end
 if player_num == 1 &&
     comp_num == 0
