@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # заводимо змінну
 a = 100
 

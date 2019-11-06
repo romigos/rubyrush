@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # заводимо змінні
 a = 2308
 b = 13

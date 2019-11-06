@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # користувач заводить числа для розрахунку
 puts 'Введите число 1: '
 a = gets.chomp.to_i

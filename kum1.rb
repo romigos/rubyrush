@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # умова
 # 1-19 період1
 # 15-33 період2

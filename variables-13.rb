@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # знаходимо який сьогодні день
 time = Time.now
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 hello = 'Привет пацани!'
 hello2 = 'Пока девчонки!'
 devchenki = false

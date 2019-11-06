@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 # У нас всего 8 машин. Вам какую?
 # 6
 # Поздравляем, вы получили:
 # Toyota
 
 # Заводимо масив масив
-cars = ['TOYOTA', 'HONDA', 'VAZ', 'VW', 'GAZ', 'DAEWOO', 'MERSEDES-BENZ', 'FORD', 'MITSUBISHI', 'RENAULT']
+cars = %w[TOYOTA HONDA VAZ VW GAZ DAEWOO MERSEDES-BENZ FORD MITSUBISHI RENAULT]
 # Виводимо питання про кількість машин в навності.
 puts 'У нас усього ' + cars.count.to_s + ' машин. Вам яку?'
 

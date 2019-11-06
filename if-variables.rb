@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # задаємо змінні
 a = 172.169
 b = 31.514
