@@ -16,7 +16,7 @@ player_num = gets.chomp.to_i
 puts 'Ви вибрали: ' + variants[player_num]
 
 # Компютер робить свій вибір
-comp_num = rand(2)
+comp_num = rand(3)
 puts 'Компьютер вбрав: ' + variants[comp_num]
 
 # Перевіряємо введену користувачем і компьютером інформацію
