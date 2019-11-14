@@ -1,9 +1,10 @@
-#Гра відсотруй яйця в кошику
 numbers = []
-user_numbers = gets.to_i.chomp
-puts user_numbers
-numbers = 1
-while count <= 5 do
+user_number = gets.to_i
+
+count = 0
+while count <= user_number do
   count += 1
-  numbers << item
+  numbers << count
 end
+puts numbers.to_s
+puts numbers.sum
