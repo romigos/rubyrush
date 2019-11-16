@@ -10,5 +10,11 @@ while count < user_number do
   count += 1
 end
 puts array.to_s
-puts 'Найбільше число: ' + array.max.to_s
 
+max_sum = 0
+array.each do |item|
+  if item > max_sum
+    max_sum = item
+  end
+end
+puts 'Найбільше число: ' + max_sum.to_s
