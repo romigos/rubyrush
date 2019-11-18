@@ -5,11 +5,9 @@ puts 'Ви вирішити прогулятися по нічній Жмери�
 2. продовжити йти'
 
 choice = gets.chomp
-if choice != '1' || choice != '2'
+while choice != '1' && choice != '2' do
   puts 'Виберіть варінт 1 або 2 '
   choice = gets.chomp
-else
-  abort
 end
 
 if choice == '1'
@@ -19,6 +17,11 @@ else
   1. дати прикурити
   2. -- не курю'
   choice = gets.chomp
+
+  while choice != '1' && choice != '2' do
+    puts 'Виберіть варінт 1 або 2 '
+    choice = gets.chomp
+  end
 
   if choice == '1'
     abort 'Перекуривши залізничники пішли далі'
