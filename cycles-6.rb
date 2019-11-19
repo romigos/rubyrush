@@ -1,6 +1,7 @@
 # frozen_string_literal: true
-# Назначаємо масив
+# Назначаємо масиви
 array = []
+new_array = []
 
 # Заповнюємо масив
 i = 0
@@ -8,13 +9,11 @@ while i < 7 do
   array << i
   i += 1
 end
-# Ввиводимо масив
+# Виводимо масив
 puts array.to_s
 
-# Перебор масива наоборот
-
+# Перебираємо новий масив
 array.each do |item|
-  array << item
+  new_array.unshift(item)
+  puts new_array.to_s
 end
-
-puts array.to_s
