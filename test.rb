@@ -1,6 +1,6 @@
 name = ARGV[0]
 
-if (Gem.win_platform? and ARGV[0])
+if Gem.win_platform? and ARGV[0]
   name = name.encode(ARGV[0].encoding, 'cp1251').encode('UTF-8')
 end
 
@@ -8,7 +8,7 @@ if name == nil
   name = 'Таємнича персона'
 end
 
-puts 'Доброго дня, #{name}! Потрібно щоб Ви відповіли на питання.'
+puts "Доброго дня, #{name}! Потрібно щоб Ви відповіли на питання."
 
 questions = [
     'Если ваш партнер бросает взгляд на незнакомую женщину, вы устраиваете ему скандал прямо на улице?',
@@ -41,3 +41,26 @@ results = [
         'Вы должны решать волнующие вас проблемы со своим партнером.'
 ]
 yes_answers = 0
+
+questions.each do |item|
+  puts item
+  user_input = nil
+  while user_input != 'yes' and user_input != 'no'
+    puts 'Введіть yes або no і нажміть Eenter'
+    user_input = STDIN.gets.chomp.downcase # Метод downcase робить маленькими слова, які введе користувач
+  end
+  if user_input == 'yes'
+    yes_answers += 1
+  end
+end
+
+puts "\n #{name}"
+puts "Ваш результат теста (відповіді да - #{yes_answers}):"
+
+if yes_answers >= 10
+  puts results[0]
+elsif yes_answers >= 5
+  puts results[1]
+else
+  results[2]
+end
