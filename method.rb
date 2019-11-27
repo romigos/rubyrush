@@ -5,6 +5,10 @@ end
 say_hi('Роман')
 
 def sklonenie(number, krakodil, krokodila, krokodilov)
+# Важлива перевірка на число
+  if number == nil || !number.is_a?(Numeric)
+    number = 0
+  end
   ostatok = number % 10
 
   if ostatok == 1
