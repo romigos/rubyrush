@@ -20,7 +20,6 @@ else
   if res <= 2
     puts 'Тепло'
   else
-    a = 'я не хочу думати'
     puts 'Холодно'
   end
   if chislo_kor > chislo_komp
